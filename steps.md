@@ -27,4 +27,24 @@ cd data/C128
 # echo $? # should return 0
 # export PKG_CONFIG_PATH=/usr/lib64/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig
 #  sudo yum install libtool # for SDL2_image?
+
+
+./x128 -keybuf "10 graphic 1
+  20 scnclr
+  30 circle 1,100,100,20
+  run
+" +warp -limitcycles 1000000 -exitscreenshotvicii haha.png
+
+mkdir vice
+cd vice
+cp vice-3.5/src/x128 .
+cp vice-3.5/data/common/* .
+cp vice-3.5/data/C128/* .
+cp vice-3.5/data/DRIVES/* .
+cp vice-3.5/data/PRINTER/* .
 ```
+
+[3 Invoking the Emulators](https://vice-emu.sourceforge.io/vice_3.html)
+[6 Settings and resources](https://vice-emu.sourceforge.io/vice_6.html#SEC43)
+[Return binary file from Lambda?](https://stackoverflow.com/a/58107099)
+[Publishing a custom runtime](https://docs.aws.amazon.com/lambda/latest/dg/runtimes-walkthrough.html)
