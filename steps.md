@@ -42,6 +42,19 @@ cp vice-3.5/data/common/* .
 cp vice-3.5/data/C128/* .
 cp vice-3.5/data/DRIVES/* .
 cp vice-3.5/data/PRINTER/* .
+
+
+❯ zip things.zip vice/* lib64/* bootstrap things.sh
+
+
+Error - failed to create user cache dir
+https://fossies.org/dox/vice-3.5/archdep__user__cache__path_8c_source.html
+
+https://www.lemon64.com/forum/viewtopic.php?t=45074&sid=c07247d81d9dc2b82f156af1ff40c7e2
+export XDG_CACHE_HOME=/tmp
+export XDG_CONFIG_HOME=/tmp
+
+up timeout to 10 seconds
 ```
 
 [3 Invoking the Emulators](https://vice-emu.sourceforge.io/vice_3.html)
