@@ -55,9 +55,14 @@ export XDG_CACHE_HOME=/tmp
 export XDG_CONFIG_HOME=/tmp
 
 up timeout to 10 seconds
+
+zip things.zip vice/* libpng15* bootstrap things.sh
+
+have to write to /tmp
 ```
 
 [3 Invoking the Emulators](https://vice-emu.sourceforge.io/vice_3.html)
 [6 Settings and resources](https://vice-emu.sourceforge.io/vice_6.html#SEC43)
 [Return binary file from Lambda?](https://stackoverflow.com/a/58107099)
 [Publishing a custom runtime](https://docs.aws.amazon.com/lambda/latest/dg/runtimes-walkthrough.html)
+[6502 cloud exists](http://www.6502cloud.com)

@@ -1,6 +1,7 @@
 #!/bin/sh
 
-set -euo pipefail
+#set -euo pipefail
+set -uo pipefail
 
 # Initialization - load function handler
 set -x

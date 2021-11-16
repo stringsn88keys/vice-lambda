@@ -1,0 +1,2 @@
+rm things.zip
+zip things.zip vice/* libpng15* bootstrap things.sh
