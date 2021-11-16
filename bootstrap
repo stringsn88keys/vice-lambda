@@ -11,6 +11,7 @@ source $LAMBDA_TASK_ROOT/"$(echo $_HANDLER | cut -d. -f1).sh"
 # part1.sh is the script loaded.
 # handler() is the function that is invoked below
 
+# otherwise vice tries to write to the 'home' directory that isn't a [writeable] thing in Lambda
 export XDG_CACHE_HOME=/tmp
 export XDG_CONFIG_HOME=/tmp
 
