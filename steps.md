@@ -59,10 +59,39 @@ up timeout to 10 seconds
 zip things.zip vice/* libpng15* bootstrap things.sh
 
 have to write to /tmp
-```
 
+128 MB and 12 seconds for the Lambda config
+
+
+
+Create API Gateway : REST API
+- NEW API
+- vice128, Regional
+
+- New method
+- GET
+- Integration Type: Lambda Function
+- Use Lambda Proxy Integration
+
+```
+https://stackoverflow.com/questions/41429551/aws-api-gateway-base64decode-produces-garbled-binary/47780921#47780921
+[Content type conversions](https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-payload-encodings-workflow.html)
+[Return values](https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-lambda-proxy-integrations.html)
+[Malformed Lambda proxy response](https://stackoverflow.com/questions/43708017/aws-lambda-api-gateway-error-malformed-lambda-proxy-response)
+[Handling Binary Data](https://aws.amazon.com/blogs/compute/handling-binary-data-using-amazon-api-gateway-http-apis/)
 [3 Invoking the Emulators](https://vice-emu.sourceforge.io/vice_3.html)
 [6 Settings and resources](https://vice-emu.sourceforge.io/vice_6.html#SEC43)
 [Return binary file from Lambda?](https://stackoverflow.com/a/58107099)
 [Publishing a custom runtime](https://docs.aws.amazon.com/lambda/latest/dg/runtimes-walkthrough.html)
 [6502 cloud exists](http://www.6502cloud.com)
+
+[AWS API Gateway base64Decode produces garbled binary?](https://stackoverflow.com/a/41434295/725805)
+https://stackoverflow.com/questions/45348580/aws-lambda-fails-to-return-pdf-file/45368224#45368224
+
+
+API GATEWAY
+
+just log into your console
+choose your api
+click on binary support in the dropdown
+edit binary media type and add "*/*"

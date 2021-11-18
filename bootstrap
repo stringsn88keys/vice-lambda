@@ -31,4 +31,7 @@ do
   # https://docs.aws.amazon.com/lambda/latest/dg/runtimes-api.html#runtimes-api-response
   # Send the response
   curl -X POST "http://${AWS_LAMBDA_RUNTIME_API}/2018-06-01/runtime/invocation/$REQUEST_ID/response"  -d "$RESPONSE"
+#  curl -X POST "http://${AWS_LAMBDA_RUNTIME_API}/2018-06-01/runtime/invocation/$REQUEST_ID/response"  -H 'Content-Type: image/png' --data-binary @$RESPONSE | jq .
+#curl -X POST -H 'content-type: image/jpeg' --data-binary @../testdata/rainbow-small.jpg $ECHO_JSON_API | jq .
+
 done
