@@ -13,11 +13,13 @@ PATH=~/xa-2.3.11:$PATH
 # sudo yum install SDL2-static
 # sudo yum install SDL2-devel
 # sudo yum install text2dvi
+sudo yum install Xfvb
+sudo yum install libX11-devel.x86_64
 # ( may need a different option than headlessui )
 ./configure --disable-pdf-docs --enable-headlessui --without-pulse --without-alsa
 make
 cd data/C128
-../../src/x128 -keybuf "10 graphic 1
+../../src/x128 -ntsc -keybuf "10 graphic 1
   20 scnclr
   30 circle 1,100,100,20
   run
@@ -87,6 +89,7 @@ https://stackoverflow.com/questions/41429551/aws-api-gateway-base64decode-produc
 
 [AWS API Gateway base64Decode produces garbled binary?](https://stackoverflow.com/a/41434295/725805)
 https://stackoverflow.com/questions/45348580/aws-lambda-fails-to-return-pdf-file/45368224#45368224
+[Why does the base64 of a string contain "\n"](https://superuser.com/a/1225139)
 
 
 API GATEWAY
