@@ -4,7 +4,6 @@
 set -uo pipefail
 
 # Initialization - load function handler
-set -x
 source $LAMBDA_TASK_ROOT/"$(echo $_HANDLER | cut -d. -f1).sh"
 
 # part1.part2 (e.g., function.handler) is the name of the lambda

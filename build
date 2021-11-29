@@ -1,2 +1,2 @@
-rm things.zip
-zip things.zip vice/* libpng15* bootstrap things.sh
+rm vice-lambda.zip
+zip vice-lambda.zip vice/* libpng15* bootstrap vice-lambda.sh maze.bas
